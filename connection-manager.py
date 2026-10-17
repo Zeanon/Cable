@@ -73,6 +73,8 @@ def main() -> int:
 
     logger.info("Launcher: Creating QApplication...")
     app = QApplication(sys.argv)
+    app.setApplicationDisplayName("Cable")
+    app.setDesktopFileName("com.github.magillos.cable")
     logger.info("Launcher: QApplication created.")
     QGuiApplication.setDesktopFileName("com.github.magillos.cable")
 
